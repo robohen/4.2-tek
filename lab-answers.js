@@ -66,12 +66,26 @@
 // const just makes the variable unreassignable but the contents of the array can be modified
 //
 //Where is Waldo //
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                      ["Lucinda", "Jacc", "Neff", "Snoop"],
-                      ["Petunia", ["Baked Goods", "Waldo"]]];
- whereIsWaldo.splice(1,1);
- console.log(whereIsWaldo);
- whereIsWaldo.splice(2,1, ["Lucinda", "Jacc", "No One", "Snoop"]);   
- console.log(whereIsWaldo);
-console.log(whereIsWaldo[3][1][1]);                  
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                       ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                       ["Petunia", ["Baked Goods", "Waldo"]]];
+//  whereIsWaldo.splice(1,1);
+//  console.log(whereIsWaldo);
+//  whereIsWaldo.splice(2,1, ["Lucinda", "Jacc", "No One", "Snoop"]);   
+//  console.log(whereIsWaldo);
+// console.log(whereIsWaldo[3][1][1]);                  
+//
+//Excited Kitten//
+let kittens = " ";
+for (let i = 0; i < 20; i++){
+    const lines = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?" ];
+    const randomLines = Math.floor(Math.random() * 3);
+    
+    if(i % 2 === 0)
+    {console.log("Love me, pet me! HSSSSSS!")
+    }
+    else
+    {console.log(lines[randomLines])}
+    
+}
 //
