@@ -76,16 +76,39 @@
 // console.log(whereIsWaldo[3][1][1]);                  
 //
 //Excited Kitten//
-let kittens = " ";
-for (let i = 0; i < 20; i++){
-    const lines = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?" ];
-    const randomLines = Math.floor(Math.random() * 3);
+// let kittens = " ";
+// for (let i = 0; i < 20; i++){
+//     const lines = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?" ];
+//     const randomLines = Math.floor(Math.random() * 3);
     
-    if(i % 2 === 0)
-    {console.log("Love me, pet me! HSSSSSS!")
-    }
-    else
-    {console.log(lines[randomLines])}
+//     if(i % 2 === 0)
+//     {console.log("Love me, pet me! HSSSSSS!")
+//     }
+//     else
+//     {console.log(lines[randomLines])}
     
+// }
+//
+//Find the Median//
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort((a, b) => a - b)
+
+//declare median variable
+let median;
+
+//if else block to check for even or odd
+if(nums.length%2 != 0){
+    //odd case
+    //find middle index
+    let middleIndex = Math.floor(nums.length/2)
+    //find median
+    median = nums[middleIndex]
+}else{
+    //even case
+    //find middle index
+    let middleIndex = Math.floor(nums.length/2)
+    //find median
+    median = (nums[middleIndex] + nums[middleIndex - 1])/2
 }
+console.log(median);
 //
